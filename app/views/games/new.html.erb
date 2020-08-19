@@ -1,0 +1,8 @@
+<h1> New game </h1>
+
+<%= @letters %>
+
+<form action="/score" method="post">
+  <input type="text" name="word">
+  <input type="submit" value="Ask!">
+</form>
