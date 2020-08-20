@@ -1,1 +1,21 @@
 <h1>Score page</h1>
+
+
+<div class="answer">
+  <h2> <%= @result[:message]%> </h2>
+</div>
+
+<div class="answer">
+  <h2>Score</h2>
+  <h3> <%= @result[:score].to_i.round(2)%> </h3>
+
+</div>
+<div class="answer">
+  <h2>Time</h2>
+  <h3> <%= @result[:time].to_i.round(1)%> </h3>
+
+</div>
+
+<%= link_to "Play Again", new_path %>
+
+
